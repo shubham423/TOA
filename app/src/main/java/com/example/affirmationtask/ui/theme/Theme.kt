@@ -11,7 +11,7 @@ fun TAOTheme(
 
     MaterialTheme(
         colors = colors,
-        typography = Typography,
+        typography = typography,
         shapes = Shapes,
         content = content
     )
