@@ -16,7 +16,7 @@ import androidx.compose.ui.text.toUpperCase
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.affirmationtask.R
 import com.example.affirmationtask.ui.theme.ButtonShape
-import com.example.affirmationtask.ui.theme.TAOTheme
+import com.example.affirmationtask.ui.theme.TOATheme
 
 /**
  * This is a custom [Button] that provides the shape and styling expected
@@ -63,7 +63,7 @@ fun PrimaryButton(
 @Composable
 @Suppress("UnusedPrivateMember")
 private fun PrimaryButtonPreview() {
-    TAOTheme {
+    TOATheme {
         PrimaryButton(
             text = "Primary button",
             onClick = {},

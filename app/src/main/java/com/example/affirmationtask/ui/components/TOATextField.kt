@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.affirmationtask.R
-import com.example.affirmationtask.ui.theme.TAOTheme
+import com.example.affirmationtask.ui.theme.TOATheme
 import com.example.affirmationtask.ui.theme.TextFieldShape
 
 /**
@@ -56,7 +56,7 @@ fun TOATextField(
 @Composable
 @Suppress("UnusedPrivateMember")
 private fun FilledTOATextFieldPreview() {
-    TAOTheme {
+    TOATheme {
         Surface {
             TOATextField(
                 text = "TOA text field",
@@ -78,7 +78,7 @@ private fun FilledTOATextFieldPreview() {
 @Composable
 @Suppress("UnusedPrivateMember")
 private fun EmptyTOATextFieldPreview() {
-    TAOTheme {
+    TOATheme {
         Surface {
             TOATextField(
                 text = "",
