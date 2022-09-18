@@ -16,7 +16,6 @@ import com.example.affirmationtask.R
 import com.example.affirmationtask.ui.theme.ButtonShape
 import com.example.affirmationtask.ui.theme.TAOTheme
 
-
 @Composable
 fun SecondaryButton(
     text: String,
