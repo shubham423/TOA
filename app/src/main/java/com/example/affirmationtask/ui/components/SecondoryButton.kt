@@ -14,8 +14,16 @@ import androidx.compose.ui.text.toUpperCase
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.affirmationtask.R
 import com.example.affirmationtask.ui.theme.ButtonShape
-import com.example.affirmationtask.ui.theme.TAOTheme
+import com.example.affirmationtask.ui.theme.TOATheme
 
+/**
+ * This is a custom [TextButton] that provides the shape and styling expected
+ * in the TOA application.
+ *
+ * @param[text] The text inside the button.
+ * @param[onClick] A callback invoked when the user clicks the button.
+ * @param[modifier] An optional [Modifier] to configure this component.
+ */
 @Composable
 fun SecondaryButton(
     text: String,
@@ -46,7 +54,7 @@ fun SecondaryButton(
 @Composable
 @Suppress("UnusedPrivateMember")
 private fun SecondaryButtonPreview() {
-    TAOTheme {
+    TOATheme {
         Surface {
             SecondaryButton(
                 text = "Primary button",
