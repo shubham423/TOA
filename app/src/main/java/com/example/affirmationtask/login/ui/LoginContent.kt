@@ -1,4 +1,4 @@
-package com.example.affirmationtask.ui.login
+package com.example.affirmationtask.login.ui
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
@@ -18,11 +18,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.affirmationtask.R
-import com.example.affirmationtask.ui.components.PrimaryButton
-import com.example.affirmationtask.ui.components.SecondaryButton
-import com.example.affirmationtask.ui.components.TOATextField
-import com.example.affirmationtask.ui.components.VerticalSpacer
-import com.example.affirmationtask.ui.theme.TOATheme
+import com.example.affirmationtask.core.ui.components.PrimaryButton
+import com.example.affirmationtask.core.ui.components.SecondaryButton
+import com.example.affirmationtask.core.ui.components.TOATextField
+import com.example.affirmationtask.core.ui.core.VerticalSpacer
+import com.example.affirmationtask.core.ui.theme.TOATheme
 
 private const val APP_LOGO_WIDTH_PERCENTAGE = 0.75F
 
@@ -30,7 +30,7 @@ private const val APP_LOGO_WIDTH_PERCENTAGE = 0.75F
  * This composable maintains the entire screen for handling user login.
  *
  * @param[viewState] The current state of the screen to render.
- * @param[onUsernameChanged] A callback invoked when the user enters their username.
+ * @param[onEmailChanged] A callback invoked when the user enters their username.
  * @param[onPasswordChanged] A callback invoked when the user enters their password.
  * @param[onLoginClicked] A callback invoked when the user clicks the login button.
  * @param[onSignUpClicked] A callback invoked when the user clicks the sign up button.
@@ -38,7 +38,7 @@ private const val APP_LOGO_WIDTH_PERCENTAGE = 0.75F
 @Composable
 fun LoginContent(
     viewState: LoginViewState,
-    onUsernameChanged: (String) -> Unit,
+    onEmailChanged: (String) -> Unit,
     onPasswordChanged: (String) -> Unit,
     onLoginClicked: () -> Unit,
     onSignUpClicked: () -> Unit,
@@ -60,8 +60,8 @@ fun LoginContent(
             Spacer(modifier = Modifier.weight(1F))
 
             UsernameInput(
-                text = viewState.userName,
-                onTextChanged = onUsernameChanged,
+                text = viewState.email,
+                onTextChanged = onEmailChanged,
             )
 
             VerticalSpacer(height = 12.dp)
@@ -126,7 +126,7 @@ private fun UsernameInput(
     TOATextField(
         text = text,
         onTextChanged = onTextChanged,
-        labelText = stringResource(R.string.username),
+        labelText = stringResource(R.string.email),
     )
 }
 
@@ -152,14 +152,14 @@ private fun AppLogo() {
 @Suppress("UnusedPrivateMember")
 private fun EmptyLoginContentPreview() {
     val viewState = LoginViewState(
-        userName = "",
+        email = "",
         password = "",
     )
 
     TOATheme {
         LoginContent(
             viewState = viewState,
-            onUsernameChanged = {},
+            onEmailChanged = {},
             onPasswordChanged = {},
             onLoginClicked = {},
             onSignUpClicked = {},

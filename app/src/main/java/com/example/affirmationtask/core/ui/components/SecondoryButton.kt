@@ -1,4 +1,4 @@
-package com.example.affirmationtask.ui.components
+package com.example.affirmationtask.core.ui.components
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -16,8 +16,8 @@ import androidx.compose.ui.text.intl.Locale
 import androidx.compose.ui.text.toUpperCase
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.affirmationtask.R
-import com.example.affirmationtask.ui.theme.ButtonShape
-import com.example.affirmationtask.ui.theme.TOATheme
+import com.example.affirmationtask.core.ui.theme.ButtonShape
+import com.example.affirmationtask.core.ui.theme.TOATheme
 
 /**
  * This is a custom [TextButton] that provides the shape and styling expected
