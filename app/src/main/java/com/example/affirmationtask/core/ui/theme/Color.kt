@@ -1,6 +1,6 @@
 @file:Suppress("MagicNumber")
 
-package com.example.affirmationtask.ui.theme
+package com.example.affirmationtask.core.ui.theme
 
 import androidx.compose.material.lightColors
 import androidx.compose.ui.graphics.Color

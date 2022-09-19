@@ -1,4 +1,4 @@
-package com.example.affirmationtask.ui.components
+package com.example.affirmationtask.core.ui.core
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height

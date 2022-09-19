@@ -1,4 +1,4 @@
-package com.example.affirmationtask.ui.theme
+package com.example.affirmationtask.core.ui.theme
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
