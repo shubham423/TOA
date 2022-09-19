@@ -24,7 +24,6 @@ import com.example.affirmationtask.ui.components.TOATextField
 import com.example.affirmationtask.ui.components.VerticalSpacer
 import com.example.affirmationtask.ui.theme.TOATheme
 
-
 private const val APP_LOGO_WIDTH_PERCENTAGE = 0.75F
 
 /**

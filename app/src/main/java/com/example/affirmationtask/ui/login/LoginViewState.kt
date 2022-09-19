@@ -1,6 +1,5 @@
 package com.example.affirmationtask.ui.login
 
-
 /**
  * This defines the state of the login screen.
  *
