@@ -3,7 +3,15 @@ package com.example.affirmationtask.login.domain.usecase
 import com.example.affirmationtask.core.data.Result
 import com.example.affirmationtask.fakes.FakeLoginRepository
 import com.example.affirmationtask.fakes.FakeTokenRepository
-import com.example.affirmationtask.login.domain.model.*
+import com.example.affirmationtask.login.domain.model.AuthToken
+import com.example.affirmationtask.login.domain.model.Credentials
+import com.example.affirmationtask.login.domain.model.Email
+import com.example.affirmationtask.login.domain.model.InvalidCredentialsException
+import com.example.affirmationtask.login.domain.model.LoginResponse
+import com.example.affirmationtask.login.domain.model.LoginResult
+import com.example.affirmationtask.login.domain.model.Password
+import com.example.affirmationtask.login.domain.model.RefreshToken
+import com.example.affirmationtask.login.domain.model.Token
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Before
